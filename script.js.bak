@@ -28,7 +28,7 @@ if (document.getElementById("product-details")) {
     const id = params.get("id");
     const product = products.find(p => p.id == id);
 
-    document.getElementById("product-details").innerHTML = html;
+    document.getElementById("product-details").innerHTML = `
         <img src="${product.image}">
         <h2>${product.name}</h2>
         <p>Price: ₹${product.price}</p>
